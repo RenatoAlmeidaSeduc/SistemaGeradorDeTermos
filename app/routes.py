@@ -1,13 +1,11 @@
-import os
-from flask import Flask, request, render_template, send_file, after_this_request
+from flask import request, render_template, send_file, after_this_request
 import pandas as pd
 from docx import Document
 from docx.shared import Pt
+import os
 import tempfile
 import zipfile
-
-app = Flask(__name__)
-
+from app import app
 
 @app.route('/', methods=['GET', 'POST'])
 def index():
@@ -94,4 +92,3 @@ def gerar_termos(arquivo_xlsx, regional_selecionada, pasta_destino):
                             update_font_size(paragraph, 10)
 
         doc.save(os.path.join(pasta_destino, f"{row['UNIDADE']}_TERMO_{row['SERVIDOR']}.docx"))
-
