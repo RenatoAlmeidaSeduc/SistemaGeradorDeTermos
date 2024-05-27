@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="pt">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Termos</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Geração de Termos de Aquisição de Notebooks</h1>
+        <form id="termoForm" action="/" method="post" enctype="multipart/form-data">
+            <label for="regional">Selecione uma Regional:</label>
+            <select id="regional" name="regional">
+                <option>Selecione</option>
+                <option value="ARAGUAINA">ARAGUAINA</option>
+                <option value="ARAGUATINS">ARAGUATINS</option>
+                <option value="ARRAIAS">ARRAIAS</option>
+                <option value="COLINAS">COLINAS</option>
+                <option value="DIANOPOLIS">DIANOPOLIS</option>
+                <option value="GUARAI">GUARAI</option>
+                <option value="GURUPI">GURUPI</option>
+                <option value="MIRACEMA">MIRACEMA</option>
+                <option value="PALMAS">PALMAS</option>
+                <option value="PARAISO">PARAISO</option>
+                <option value="PEDRO AFONSO">PEDRO AFONSO</option>
+                <option value="PORTO NACIONAL">PORTO NACIONAL</option>
+                <option value="TOCANTINOPOLIS">TOCANTINOPOLIS</option>
+                <option value="SEDUC SEDE">SEDUC SEDE</option>
+            </select>
+
+            <label for="file">Selecione um arquivo Excel:</label>
+            <input type="file" id="file" name="file" accept=".xlsx">
+
+            <button type="submit">Gerar Termos</button>
+        </form>
+        <div class="footer">
+            <p>Desenvolvido por Renato Luiz de Almeida (Gerência de Sistemas - SEDUC Tocantins)</p>
+        </div>
+    </div>
+
+    <div id="loading" class="loading">
+        <div class="spinner"></div>
+        <p>Gerando termos, por favor aguarde...</p>
+    </div>
+
+    <script>
+        document.getElementById('termoForm').onsubmit = function() {
+            document.getElementById('loading').style.display = 'flex';
+        };
+
+        document.addEventListener('DOMContentLoaded', function() {
+            var downloadLink = document.createElement('a');
+            downloadLink.style.display = 'none';
+            document.body.appendChild(downloadLink);
+
+            var form = document.getElementById('termoForm');
+            form.onsubmit = function(event) {
+                event.preventDefault();
+                document.getElementById('loading').style.display = 'flex';
+
+                var formData = new FormData(form);
+                fetch('/', {
+                    method: 'POST',
+                    body: formData
+                })
+                .then(response => response.blob())
+                .then(blob => {
+                    var url = window.URL.createObjectURL(blob);
+                    downloadLink.href = url;
+                    downloadLink.download = 'termos.zip';
+                    downloadLink.click();
+                    window.URL.revokeObjectURL(url);
+                    document.getElementById('loading').style.display = 'none';
+                })
+                .catch(error => {
+                    console.error('Error:', error);
+                    document.getElementById('loading').style.display = 'none';
+                });
+            };
+        });
+    </script>
+</body>
+</html>
