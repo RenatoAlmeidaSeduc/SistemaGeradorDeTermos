@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="21b2b9ed-d5bd-4daf-b067-1b8796d90ff8" name="Changes" comment="git publicação" />
+    <list default="true" id="21b2b9ed-d5bd-4daf-b067-1b8796d90ff8" name="Changes" comment="gertdfgvcxgdfg" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,6 +67,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\05941678177\Documents\SistemaGeradorDeTermos\static_site" />
       <recent name="C:\Users\05941678177\Documents\SistemaGeradorDeTermos" />
       <recent name="C:\Users\05941678177\Documents\SistemaGeradorDeTermos\app" />
     </key>
@@ -196,7 +197,7 @@
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -205,12 +206,12 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Flask server.SistemaGeradorDeTermos" />
-      <item itemvalue="Python.main" />
-      <item itemvalue="Python.generate_static" />
       <item itemvalue="Python.__init__" />
-      <item itemvalue="Python.wsgi" />
       <item itemvalue="Python.app" />
+      <item itemvalue="Python.generate_static" />
+      <item itemvalue="Python.main" />
+      <item itemvalue="Python.wsgi" />
+      <item itemvalue="Flask server.SistemaGeradorDeTermos" />
     </list>
     <recent_temporary>
       <list>
@@ -245,6 +246,7 @@
       <workItem from="1716900297883" duration="3532000" />
       <workItem from="1716903877400" duration="317000" />
       <workItem from="1716904203136" duration="3134000" />
+      <workItem from="1716909000414" duration="145000" />
     </task>
     <task id="LOCAL-00001" summary="att">
       <option name="closed" value="true" />
@@ -294,7 +296,23 @@
       <option name="project" value="LOCAL" />
       <updated>1716907157658</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="gertdfgvcxgdfg">
+      <option name="closed" value="true" />
+      <created>1716909045835</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1716909045836</updated>
+    </task>
+    <task id="LOCAL-00008" summary="gertdfgvcxgdfg">
+      <option name="closed" value="true" />
+      <created>1716909127618</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1716909127618</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -316,7 +334,8 @@
     <MESSAGE value="routes" />
     <MESSAGE value="atualiza" />
     <MESSAGE value="git publicação" />
-    <option name="LAST_COMMIT_MESSAGE" value="git publicação" />
+    <MESSAGE value="gertdfgvcxgdfg" />
+    <option name="LAST_COMMIT_MESSAGE" value="gertdfgvcxgdfg" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/SistemaGeradorDeTermos$app.coverage" NAME="app Coverage Results" MODIFIED="1716849279959" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
