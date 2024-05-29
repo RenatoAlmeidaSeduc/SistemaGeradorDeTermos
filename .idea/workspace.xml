@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="21b2b9ed-d5bd-4daf-b067-1b8796d90ff8" name="Changes" comment="vercelllllllll">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vercel.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -202,7 +203,7 @@
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
@@ -211,12 +212,12 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.__init__" />
-      <item itemvalue="Python.app" />
-      <item itemvalue="Python.generate_static" />
-      <item itemvalue="Python.main" />
-      <item itemvalue="Python.wsgi" />
       <item itemvalue="Flask server.SistemaGeradorDeTermos" />
+      <item itemvalue="Python.main" />
+      <item itemvalue="Python.generate_static" />
+      <item itemvalue="Python.__init__" />
+      <item itemvalue="Python.wsgi" />
+      <item itemvalue="Python.app" />
     </list>
     <recent_temporary>
       <list>
@@ -255,6 +256,7 @@
       <workItem from="1716909203348" duration="111000" />
       <workItem from="1716910014783" duration="80000" />
       <workItem from="1716998346403" duration="481000" />
+      <workItem from="1716999527271" duration="467000" />
     </task>
     <task id="LOCAL-00001" summary="att">
       <option name="closed" value="true" />
@@ -336,7 +338,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716998683493</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="vercelllllllll">
+      <option name="closed" value="true" />
+      <created>1716999581198</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1716999581198</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

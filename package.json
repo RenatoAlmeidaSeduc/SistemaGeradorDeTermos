@@ -1,0 +1,14 @@
+{
+  "name": "my-flask-app",
+  "version": "1.0.0",
+  "main": "wsgi.py",
+  "dependencies": {
+    "flask": "*",
+    "pandas": "*",
+    "python-docx": "*"
+  },
+  "scripts": {
+    "start": "python3 wsgi.py"
+  }
+}
+
