@@ -93,3 +93,4 @@ def gerar_termos(arquivo_xlsx, regional_selecionada, pasta_destino):
 
         doc.save(os.path.join(pasta_destino, f"{row['UNIDADE']}_TERMO_{row['SERVIDOR']}.docx"))
 
+
